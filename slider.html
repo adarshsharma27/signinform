@@ -1,0 +1,201 @@
+<html><head><title></title>
+
+<style>
+
+.slider img{
+
+width:200px;
+height:200px;
+
+
+padding:20px;
+}
+.slider{
+height:300px;
+width:300px;
+    margin: -14px auto;;
+
+
+}
+.arrow-1{
+
+    padding-left:100px;
+
+}
+
+.arrow-2{
+
+padding-right:100px;
+margin-top:20px;
+}
+
+
+
+/* form css*/
+
+.singnup-login{
+    width:800px;
+    height:600px;
+    background-color:#f7f7f7;
+}
+
+.sign-up{
+
+    width:338px;
+    height:350px;
+    margin-left:20px;
+    padding:10px;
+    animation: yourAnimation 3s forwards 0s linear;;
+}
+
+@keyframes yourAnimation{
+    0%{
+        transform: translateX(0px) skewX(0px);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(50deg) skewX(0px);
+        opacity: 1;
+        }
+}
+
+h4{
+
+    color:4f4d4d;
+}
+form{
+    border: 2px solid white;
+    background-color: white;
+    border-radius:5px;
+    box-shadow:-2px 1px 6px 6px #21212136;
+}
+
+form input{
+    width:285px;
+    height:34px;
+    background-color:#f0f0f0;
+    border:1px solid #f0f0f0;
+    box-sizing:border-box;
+    margin:10px;
+    padding: 4px;
+}
+
+.com{
+
+width:135px;
+height:33px;
+display:inline-block;
+margin-right:0px;
+}
+button{
+    width:95px;
+    height:34px;
+    background-color:#fea15d;
+    margin-left:100px;
+      margin-top:20px;
+      border: 0px solid #fea15d;;
+      
+      
+}
+
+ button.colr{
+
+background-color:#a9dd7d;
+
+}
+::-webkit-input-placeholder{
+    color:gray;
+}
+
+::-webkit-input-required{
+   border-color:lightgreen;
+}
+
+input:valid{
+    border:solid lightgreen 2px;
+}
+input:invalid{
+    border:solid red 2px;
+}
+/* form css end signup  and css*/
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap-grid.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>        <!--  cdn for jquery-->
+    <script src="https://malsup.github.com/jquery.cycle.all.js"></script>                <!--  cdn for cycle in jquery-->
+
+<script>
+$(document).ready(function(){
+
+$(".slider").cycle("fade");
+
+
+
+
+
+
+});
+
+
+</script>
+
+
+</head>
+
+<body>
+    <div class="row">
+    <div class="arrow-1">
+            <img src="C:\Users\user\Desktop\web templte\ecommerce\images\images\images\right.gif" alt="logo"/>
+                        </div>
+<div class="slider">
+    <img src="C:\Users\user\Desktop\web templte\ecommerce\images\images\images\g2.jpg" alt="logo"/>
+    <img src="C:\Users\user\Desktop\web templte\ecommerce\images\images\images\g3.jpg" alt="logo"/>
+    <img src="C:\Users\user\Desktop\web templte\ecommerce\images\images\images\g4.jpg" alt="logo"/>
+    <img src="C:\Users\user\Desktop\web templte\ecommerce\images\images\images\g5.jpg" alt="logo"/>
+    <img src="C:\Users\user\Desktop\web templte\ecommerce\images\images\images\g6.jpg" alt="logo"/>
+
+              </div>
+
+              <div class="arrow-2">
+                    <img src="C:\Users\user\Desktop\web templte\ecommerce\images\images\images\left.gif" alt="logo"/>
+                              </div>
+                                       </div>
+
+    <!-- signup and  login form start-->                             
+     <div class="singnup-login">
+                            <div class="row">
+                                    <div class="col-lg-6 col-md-4 col-sm-2   col-xs-1">
+                                            <div class="sign-up">
+                                                <h4>SIGN UP</h4>
+                                                        <form>
+                                                        <input  class="com" type="text" maxlength="5"minlength="3" placeholder="First Name">
+                                                        <input class="com" type="text" placeholder="Last Name" >
+                                                        <input type="text" placeholder="User Name" >
+                                                        <input type="email" placeholder="Email" >
+                                                        <input type="password" placeholder="Password">
+                                                         <button> Sign Up</button>
+                                                           </form>
+                                                                      </div>
+                                                                                 </div>  
+                                                                                         
+                                                                                                
+                                                                                                 
+
+                    <div class="col-lg-6 col-md-4 col-sm-2   col-xs-1">
+                                                 <div class="sign-up">
+                                                    <h4>LOG IN</h4>
+                                                        <form>
+                                                        
+                                                        
+                                                            <input type="email" placeholder="Email">
+                                                            <input type="password" placeholder="Password">
+                                                            <button class="colr"> Log In</button>
+                                                                     </form>
+                                                                        </div>
+                                                                             </div> 
+                                                                                    </div>     
+                                                                                    <!-- signup and  login form end-->                                 
+</body>
+
+</html>
